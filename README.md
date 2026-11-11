@@ -25,7 +25,7 @@ If this tool helps you, please give this repository a ⭐ Star (top right of thi
 |---|---|---|---|
 | ChatGPT | Microsoft Store | 26.1106.51428 | |
 | Claude | Microsoft Store | 5.1231.2 | Needs one click in Claude per session (below) |
-| Antigravity | Per-user installer | 2.29.0 | |
+| Antigravity | Per-user installer | 2.23.1 | |
 | Hermes | Built from source | 0.23.0 | **Experimental**: the official installer's path is not yet verified |
 | OpenCode Desktop | Per-user installer | 2.2.6 | |
 | Cline Desktop | Per-user installer | 0.0.49 | Needs Windows UAC on (below) |

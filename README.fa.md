@@ -18,7 +18,7 @@ English guide: [README.md](README.md)
 |---|---|---|---|
 | ChatGPT | Microsoft Store | 26.1106.51428 | |
 | Claude | Microsoft Store | 5.1231.2 | در هر بار اجرای Claude یک کلیک لازم است (پایین‌تر) |
-| Antigravity | نصب برای کاربر | 2.29.0 | |
+| Antigravity | نصب برای کاربر | 2.23.1 | |
 | Hermes | ساخته‌شده از سورس | 0.23.0 | **آزمایشی**؛ مسیر نصب‌کننده رسمی هنوز بررسی نشده |
 | OpenCode Desktop | نصب برای کاربر | 2.2.6 | |
 | Cline Desktop | نصب برای کاربر | 0.0.49 | UAC ویندوز باید روشن باشد (پایین‌تر) |

@@ -2,8 +2,8 @@
 
 ## What the companion does
 
-- It talks to an app only through a local debugging port on `127.0.0.1` (ports 9229 to 9234, one per app). HTTP requests ignore proxies and redirects, and WebSocket addresses are accepted only for `ws://127.0.0.1` on the app's port, without credentials or fragments.
-- Before each pass, the single listener on the port must be the expected app in the current Windows session: Store package identity for ChatGPT and Claude, exact exe path and publisher for Antigravity, Hermes and OpenCode, and the app's own WebView2 process for Cline. Otherwise nothing is sent.
+- It talks to an app only through a local debugging port on `127.0.0.1` (ports 9229 to 9235, one per app). HTTP requests ignore proxies and redirects, and WebSocket addresses are accepted only for `ws://127.0.0.1` on the app's port, without credentials or fragments.
+- Before each pass, the single listener on the port must be the expected app in the current Windows session: Store package identity for ChatGPT and Claude, exact exe path and publisher for Antigravity, Hermes, OpenCode and T3 Code, and the app's own WebView2 process for Cline. Otherwise nothing is sent.
 - It never closes, kills or restarts an app. It starts an app with the debugging switch only when that app is not running.
 - No app files, MSIX packages or `app.asar` are patched. No certificate is installed and no elevation is needed. App security controls are never bypassed.
 - Claude: Developer Mode is switched on for the current user only. The previous values are saved first and restored by Disable RTL or by uninstalling. A damaged snapshot is kept for manual recovery, not deleted.

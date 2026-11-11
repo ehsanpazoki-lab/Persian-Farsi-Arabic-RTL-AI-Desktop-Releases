@@ -4,7 +4,7 @@
      The source code is kept in a private repository. -->
 
 **Persian / Farsi and Arabic RTL for desktop AI apps on Windows:
-ChatGPT, Claude, Antigravity, Hermes, OpenCode and Cline.**
+ChatGPT, Claude, Antigravity, Hermes, OpenCode, Cline and T3 Code.**
 
 A Windows tray app that makes Persian (Farsi) and other right-to-left text read
 correctly in desktop AI chat apps: paragraphs and lists get the right
@@ -12,6 +12,8 @@ direction, and English words, units (`4 mm²`, `12.5 bar`) and code such as
 `List<T*>` keep their order inside Persian sentences.
 
 راهنمای فارسی: [README.fa.md](README.fa.md)
+
+If this tool helps you, please give this repository a ⭐ Star (top right of this page) so other Persian and Arabic speakers can find it.
 
 > **Status: pre-release (v0.3.0-alpha18).** Every app below was tested in
 > real use, but only on one Windows PC. Please report anything that does not
@@ -21,12 +23,13 @@ direction, and English words, units (`4 mm²`, `12.5 bar`) and code such as
 
 | App | Install type that was tested | Last tested version | Notes |
 |---|---|---|---|
-| ChatGPT | Microsoft Store | 26.1027.3384.0 | |
-| Claude | Microsoft Store | 4.4212.0.0 | Needs one click in Claude per session (below) |
-| Antigravity | Per-user installer | 2.23.1 | |
-| Hermes | Built from source | — | **Experimental**: the official installer's path is not yet verified |
-| OpenCode Desktop | Per-user installer | 2.0.32 | |
+| ChatGPT | Microsoft Store | 26.1106.51428 | |
+| Claude | Microsoft Store | 5.1231.2 | Needs one click in Claude per session (below) |
+| Antigravity | Per-user installer | 2.29.0 | |
+| Hermes | Built from source | 0.23.0 | **Experimental**: the official installer's path is not yet verified |
+| OpenCode Desktop | Per-user installer | 2.2.6 | |
 | Cline Desktop | Per-user installer | 0.0.49 | Needs Windows UAC on (below) |
+| T3 Code | Per-user installer | 0.1.9 | **Experimental**; see the security note below |
 
 Besides the tested
 install folders, the companion also looks in *Program Files*, in the app's
@@ -71,6 +74,10 @@ file with `SHA256SUMS.txt` from the same release if you want to check it.
 - **Cline only:** Windows UAC must be on. With UAC off every app runs elevated
   and WebView2 ignores the debugging switch. Any UAC level, including
   "Never notify", works.
+- **T3 Code:** its agents can run commands on your PC. While T3 Code is open
+  with the debugging port, other software on this PC could reach it through
+  that port. Use RTL in T3 Code only on a PC you trust, and quit T3 Code when
+  you no longer need it.
 - **Claude only:** after Claude starts, choose *Developer → Enable Main
   Process Debugger* in Claude once per session. The companion turns on
   Claude's Developer Mode for this and restores your own setting on
@@ -80,7 +87,7 @@ file with `SHA256SUMS.txt` from the same release if you want to check it.
 
 1. Choose *Enable RTL* for an app in the tray menu. If the app is not running,
    the companion starts it with a local debugging port
-   (`127.0.0.1`, ports 9229–9234) and attaches the RTL runtime. If the app is
+   (`127.0.0.1`, ports 9229–9235) and attaches the RTL runtime. If the app is
    already open without that port, the companion asks you to quit it yourself:
    **it never closes your apps**, so unsent text is never lost.
 2. *Disable RTL* removes everything the companion added and checks each window.
@@ -116,8 +123,8 @@ or as a GitHub issue. Nothing is sent automatically. The in-app *Help* has the s
 ## Trademarks
 
 This is an independent project. It is not affiliated with, endorsed by or
-sponsored by OpenAI, Anthropic, Google, Nous Research, the OpenCode project or
-Cline. ChatGPT, Claude, Antigravity, Gemini, Hermes, OpenCode and Cline are
+sponsored by OpenAI, Anthropic, Google, Nous Research, the OpenCode project,
+Cline or T3 Tools. ChatGPT, Claude, Antigravity, Gemini, Hermes, OpenCode, Cline and T3 Code are
 trademarks or names of their respective owners and are used here only to say
 which apps this tool works with.
 
